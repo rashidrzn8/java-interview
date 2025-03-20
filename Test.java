@@ -106,8 +106,6 @@ public class Test {
 //            System.out.println(kk+ " "+ mapp.get(kk));
 //        }
 
-//        int[] arr = {2,4,5,6,2,4,5,6,664,645};
-//        Arrays.sort(arr);
 //        for(int i:arr){
 //            System.out.print(i+" ");
 //        }
