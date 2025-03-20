@@ -106,25 +106,48 @@ public class Test {
 //            System.out.println(kk+ " "+ mapp.get(kk));
 //        }
 
-        int[] arr = {2,4,5,6,2,4,5,6,664,645};
-        Arrays.sort(arr);
+//        int[] arr = {2,4,5,6,2,4,5,6,664,645};
+//        Arrays.sort(arr);
 //        for(int i:arr){
 //            System.out.print(i+" ");
 //        }
-        int temp[] = new int[arr.length];
-        int j=0;
-        for (int i=0;i<arr.length-1;i++){
-            if(arr[i] != arr[i+1]){
-                temp[j++]=arr[i];
-                temp[j++]=arr[i];
-            }
-        }
-        temp[j++] = arr[arr.length-1];
+//        int temp[] = new int[arr.length];
+//        int j=0;
+//        for (int i=0;i<arr.length-1;i++){
+//            if(arr[i] != arr[i+1]){
+//                temp[j++]=arr[i];
+//                temp[j++]=arr[i];
+//            }
+//        }
+//        temp[j++] = arr[arr.length-1];
+//
+//        for(int jj=0; jj< j ;jj++){
+//            System.out.println(temp[jj]);
+//            System.out.println(temp[jj]);
+//        }
 
-        for(int jj=0; jj< j ;jj++){
-            System.out.println(temp[jj]);
-            System.out.println(temp[jj]);
+        int[] arr = {2,4,5,6,2,4,5,6,664,3232,322};
+
+        Set<Integer> ss= new TreeSet<>();
+        for(int x:arr){
+            ss.add(x);
         }
+
+        ss.forEach((e) -> System.out.print(e+" "));
+
+
+
+//        // soert array using hashmap
+//        HashMap<Integer,Integer> newma = new HashMap<>();
+//
+//        for (int i=0;i<arr.length;i++){
+//            if (newma.containsKey(arr[i])){
+//                newma.remove(arr[i]);
+//            }
+//            newma.put(arr[i],i);
+//        }
+//        newma.forEach((k,v)-> System.out.print(k+" "));
+
 
 
     }
