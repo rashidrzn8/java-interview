@@ -122,6 +122,7 @@ public class Test {
 
         for(int jj=0; jj< j ;jj++){
             System.out.println(temp[jj]);
+            System.out.println(temp[jj]);
         }
 
 
