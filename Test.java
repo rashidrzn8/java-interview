@@ -124,14 +124,15 @@ public class Test {
 //            System.out.println(temp[jj]);
 //        }
 
-        int[] arr = {2,4,5,6,2,4,5,6,664,3232,322};
 
-        Set<Integer> ss= new TreeSet<>();
-        for(int x:arr){
-            ss.add(x);
-        }
 
-        ss.forEach((e) -> System.out.print(e+" "));
+
+//        Set<Integer> ss= new TreeSet<>();
+//        for(int x:arr){
+//            ss.add(x);
+//        }
+//
+//        ss.forEach((e) -> System.out.print(e+" "));
 
 
 
@@ -145,6 +146,24 @@ public class Test {
 //            newma.put(arr[i],i);
 //        }
 //        newma.forEach((k,v)-> System.out.print(k+" "));
+
+        int[] arr = {2,4,5,6,2,4,5,6,664,3232,322};
+
+        for (int i=0; i<arr.length-1;i++){
+            int minIndex = i;
+            for (int j=i+1; j< arr.length;j++){
+                if (arr[minIndex]>arr[j]){
+                    minIndex = j;
+                }
+            }
+
+            int temp = arr[minIndex];
+            arr[minIndex] = arr[i];
+            arr[i]=temp;
+        }
+        for (int x:arr){
+            System.out.print(" "+x);
+        }
 
 
 
